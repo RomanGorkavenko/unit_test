@@ -6,16 +6,16 @@ public class Motorcycle extends Vehicle {
         this.company = company;
         this.model = model;
         this.yearRelease = year;
-        this.numWheels = 2;
-        this.speed = 0;
+        this.setNumWheels(2);
+        this.setSpeed(0);
     }
 
     public void testDrive() {
-        this.speed = 75;
+        this.setSpeed(75);
     }
 
     public void park() {
-        this.speed = 0;
+        this.setSpeed(0);
     }
 
     public String toString() {

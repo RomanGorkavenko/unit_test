@@ -4,8 +4,8 @@ public abstract class Vehicle {
     protected String company;
     protected String model;
     protected int yearRelease;
-    protected int numWheels;
-    protected int speed;
+    private int numWheels;
+    private int speed;
 
     public String getCompany() {
         return company;
