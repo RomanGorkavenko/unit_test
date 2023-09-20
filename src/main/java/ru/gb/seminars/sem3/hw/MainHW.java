@@ -9,11 +9,7 @@ public class MainHW {
      * @return результат проверки на четность
      */
     public boolean evenOddNumber(int n) {
-        if (n % 2 == 0) {
-            return true;
-        } else {
-            return false;
-        }
+        return n % 2 == 0;
     }
 
     /**
@@ -23,7 +19,7 @@ public class MainHW {
      * @return результат проверки на вхождение в интервал.
      */
     public boolean numberInInterval(int n) {
-        return false;
+        return n >= 25 && n <= 100;
     }
 
 }
