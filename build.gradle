@@ -1,5 +1,7 @@
 plugins {
     id 'java'
+    id 'jacoco'
+//    id 'checkstyle'
 }
 
 group = 'ru.gb.seminars'
@@ -8,6 +10,7 @@ version = '1.0-SNAPSHOT'
 repositories {
     mavenCentral()
 }
+
 
 dependencies {
     testImplementation 'org.assertj:assertj-core:3.21.0'
@@ -18,8 +21,12 @@ dependencies {
     implementation 'net.bytebuddy:byte-buddy:1.14.8'
     testImplementation 'net.bytebuddy:byte-buddy-agent:1.14.8'
     testImplementation 'org.objenesis:objenesis:3.3'
+
 }
 
+
+
 test {
+    finalizedBy jacocoTestReport
     useJUnitPlatform()
 }
